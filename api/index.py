@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 
 # Load the model and preprocessor
-with open('yield prediction model.pkl', 'rb') as model_file:
+with open('api/yield prediction model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open('preprocessor.pkl', 'rb') as preprocessor_file:
+with open('api/preprocessor.pkl', 'rb') as preprocessor_file:
     preprocessor = pickle.load(preprocessor_file)
 
 # Create the Flask app
